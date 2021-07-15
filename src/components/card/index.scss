@@ -1,0 +1,56 @@
+@import "../../stylesheets/media.scss";
+.card {
+  padding: 10px;
+  margin: 15px 0px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  position: relative;
+  transition: all 0.25s;
+  display: flex;
+  > div {
+    display: inline-block;
+    &:first-child {
+      width: 20%;
+      height: 100%;
+      text-align: center;
+    }
+    img {
+      width: 70%;
+      max-width: 72px;
+      margin: 6px 0px;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 24px 0px #ddd;
+  }
+  h5 {
+    margin: 0px;
+    font-size: 22px;
+  }
+  ul {
+    padding-left: 0px;
+    margin: 4px 0px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    list-style-type: none;
+    text-align: left;
+    @include mobile {
+      margin-bottom: 40px;
+    }
+  }
+  .details {
+    background: #000;
+    color: #fff;
+    border: 0px;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}

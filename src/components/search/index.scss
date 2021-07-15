@@ -1,0 +1,21 @@
+@import "../../stylesheets/media.scss";
+.search {
+  background: #999;
+  text-align: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mobile {
+    height: 200px;
+  }
+  input {
+    border: 0px;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 16px;
+    width: 60%;
+    min-width: 300px;
+    padding: 4px 8px;
+  }
+}
