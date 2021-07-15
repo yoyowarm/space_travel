@@ -23,6 +23,8 @@ function App() {
     data.forEach(item => {
       if (!item.name.includes(search) || !item.rocket.includes(search) || !item.launchpad.includes(search) || !item.locality.includes(search)) {
         setNoResult(true)
+      } else {
+        setNoResult(false)
       }
     })
   }, [search, data])
